@@ -126,6 +126,23 @@ ul {
   margin-top: 5px;
 }
 
+.icon-box{
+  display:flex;
+  justify-content:center;
+}
+
+.icons{
+  display:flex;
+  gap:15px;
+  padding:20px;
+  text-align:center;
+}
+
+.icon{
+  color: var(--blue-green);
+}
+
+
 /*AQUI VA EL CSS DE ANDREA*/
 
 .footer {
