@@ -7,12 +7,7 @@
   --white: #fff;
   --cool-grey: #b8b8b9;
   --blue-green: #099d8d;
-  --font-family: ;
-}
-
-ul {
-  list-style: none;
-  text-decoration: none;
+  --font-family-header: "Rubik", sans-serif;
 }
 header {
   text-transform: uppercase;
@@ -21,60 +16,148 @@ header {
   top: 0;
   margin: 0;
   color: var(--white);
-  font-family: var();
+  font-family: var(--font-family-header);
 }
 .name {
   background-color: var(--blue-green);
+  height: 60px;
   padding: 15px;
-  font-size: 15px;
+  font-size: 16px;
   display: flex;
   justify-content: center;
+  align-items: center;
+}
+ul {
+  list-style: none;
+  text-decoration: none;
 }
 .navegation {
   background-color: var(--aqua);
-  padding: 7px;
   font-size: 15px;
+  padding: 8px 17px 7px 16px;
   display: flex;
   justify-content: center;
   justify-content: space-around;
 }
+/*AQUI VA EL CSS DE RAQUEL*/
+
+/* .hero{
+  background-image: url(../images/metamorfosis.jpg);
+  background-repeat: no-repeat;
+  background-size: cover; 
+  background-position: center;
+  position: relative;
+  width: 100%;
+  height: 500px;
+}
+.lema{
+  color: var(--black);
+  font-size: 18px;
+  text-align: center;
+  margin-left: 15px;
+  margin-right: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+} */
+
+.section1{
+  text-align: center;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.team{
+  color: #14d9c4;
+  font-size: 24px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.section2{
+  background-color: var(--cool-grey);
+  text-align: center;
+  padding: 10px 15px;
+}
+.skills{
+  color: #099d8d;
+  font-size: 22px;
+  text-align: center;
+}
+.parrafo{
+  font size: 16px;
+  text-align: center;
+}
 
 /*AQUÍ EMPIEZA EL CSS DEL BODY HECHO POR ANA Y SILVIA*/
+
 .about-title {
   color: #099d8d;
   text-transform: uppercase;
   text-align: center;
+  padding: 20px;
 }
 
-.container {
-  margin: 0 15px;
-}
-
-.picture-container {
-  max-width: 300px;
-  max-height: 300px;
+.card-container {
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  width: 100%;
+  max-width: 300px;
+  margin: 0 15px;
+  text-align: center;
 }
 
 .picture {
   border: 2px solid #b8b8b9;
   border-radius: 4px;
   width: 100%;
-  height: 100%;
-  gap: 15px;
+  max-height: 200px;
 }
 
 .picture-title {
   background-color: #b8b8b9;
+  padding: 5px;
   width: 100px;
 }
 
 .picture-description {
   align-content: center;
+  margin-top: 5px;
 }
 
-.art {
-  margin: 0 15px;
+/*AQUI VA EL CSS DE ANDREA*/
+
+.footer {
+  background-color: aqua;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
+.footer-name {
+  background-color: rgb(156, 120, 145);
+}
+.footer-nav {
+  background-color: aquamarine;
+  display: flex;
+}
+.footer-item {
+  background-color: yellow;
+  list-style: none;
+  text-transform: uppercase;
+  justify-content:center;
+}
+.list {
+  background-color: orange;
+  text-decoration: none;
+}
+.footer-img {
+  background-color: rgb(223, 97, 202);
+}
+
+
+
+
+
+
+
