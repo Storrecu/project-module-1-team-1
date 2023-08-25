@@ -8,6 +8,7 @@
   --cool-grey: #b8b8b9;
   --blue-green: #099d8d;
   --font-family-header: "Rubik", sans-serif;
+  --font-family-cards: "Open Sans", sans-serif;
 }
 header {
   text-transform: uppercase;
@@ -60,28 +61,28 @@ ul {
   padding-right: 15px;
 } */
 
-.section1{
+.section1 {
   text-align: center;
   margin-left: 15px;
   margin-right: 15px;
 }
-.team{
+.team {
   color: #14d9c4;
   font-size: 24px;
   text-align: center;
   text-transform: uppercase;
 }
-.section2{
+.section2 {
   background-color: var(--cool-grey);
   text-align: center;
   padding: 10px 15px;
 }
-.skills{
+.skills {
   color: #099d8d;
   font-size: 22px;
   text-align: center;
 }
-.parrafo{
+.parrafo {
   font-size: 16px;
   text-align: center;
 }
@@ -90,6 +91,9 @@ ul {
 
 .about-title {
   color: #099d8d;
+  font-family: var(--font-family-header);
+  font-weight: 500;
+  font-size: 24px;
   text-transform: uppercase;
   text-align: center;
   padding: 20px;
@@ -109,39 +113,46 @@ ul {
 }
 
 .picture {
-  border: 2px solid #b8b8b9;
+  border: 5px solid var(--black-8);
   border-radius: 4px;
-  width: 100%;
-  max-height: 200px;
+  width: 185px;
+  max-height: 185px;
 }
 
 .picture-title {
-  background-color: #b8b8b9;
-  padding: 5px;
-  width: 100px;
+  font-family: var(--font-family-cards);
+  font-weight: 600;
+  font-size: 20px;
+  padding: 15px;
+  align-content: center;
 }
 
 .picture-description {
+  color: var(--gunmetal);
+  font-family: var(--font-family-cards);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
   align-content: center;
   margin-top: 5px;
 }
 
-.icon-box{
-  display:flex;
-  justify-content:center;
+.icon-box {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
 }
 
-.icons{
-  display:flex;
-  gap:15px;
-  padding:20px;
-  text-align:center;
+.icons {
+  display: flex;
+  gap: 15px;
+  padding: 20px;
+  text-align: center;
 }
 
-.icon{
+.icon {
   color: var(--blue-green);
 }
-
 
 /*AQUI VA EL CSS DE ANDREA*/
 
@@ -162,7 +173,7 @@ ul {
   background-color: yellow;
   list-style: none;
   text-transform: uppercase;
-  justify-content:center;
+  justify-content: center;
 }
 .list {
   background-color: orange;
@@ -171,10 +182,3 @@ ul {
 .footer-img {
   background-color: rgb(223, 97, 202);
 }
-
-
-
-
-
-
-
