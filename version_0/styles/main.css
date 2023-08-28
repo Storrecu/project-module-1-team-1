@@ -173,32 +173,47 @@ ul {
 /*AQUI VA EL CSS DE ANDREA*/
 
 .footer {
-  background-color: aqua;
   display: flex;
   align-items: center;
   flex-direction: column;
+  height: 250px;
 }
+
 .footer-name {
-  background-color: rgb(156, 120, 145);
+  padding-top: 30px;
 }
+
 .footer-nav {
-  background-color: aquamarine;
+  padding-top: 20px;
   display: flex;
 }
+
+.ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .footer-item {
-  background-color: yellow;
   list-style: none;
   text-transform: uppercase;
   justify-content:center;
 }
+
 .list {
-  background-color: orange;
   text-decoration: none;
-}
-.footer-img {
-  background-color: rgb(223, 97, 202);
+  color: black;
 }
 
+.footer-img {
+  padding-top: 30px;
+  
+}
+
+.logo {
+  height: 45px;
+  width: 115.9px;
+}
 
 
 
