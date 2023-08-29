@@ -7,29 +7,31 @@
   }
   .lema {
     background-color: $white;
-    font-family: $font-family-cards;
     color: $black;
-    font-size: 25px;
+    font-family: $font-family-header;
+    font-weight: 500;
+    font-size: 18px;
+    padding: 15px 10px;
     text-align: center;
-    margin: 20px 20px;
-    z-index: 100;
-    transform: translateY(-80%);
+    margin-left: 20px;
+    margin-right: 20px;
+    z-index: 3;
+    transform: translateY(470px);
   }
-  
   .section1 {
     text-align: center;
     margin-left: 15px;
     margin-right: 15px;
   }
-  
   .team {
-    font-family: $font-family-cards;
+    font-family: $font-family-header;
+    font-weight: 500;
     color: $aqua;
     font-size: 24px;
     text-align: center;
     text-transform: uppercase;
-    margin-top: 0;
-    padding-top: 0;
+    padding-top: 50px;
+    padding-bottom: 15px;
   }
   .section1 div {
     padding-top: 30px;
@@ -45,25 +47,26 @@
     rotate: 45deg;
   }
   .section2 {
-    background-color: $cool-grey;
+    background-color: rgba(74, 72, 72, 0.057);
     text-align: center;
-    padding: 10px 15px;
+    padding: 20px 15px;
     position: relative;
     display: flex;
     justify-content: center;
-    opacity: 0.2;
   }
-  
   .skills {
-    font-family: $font-family-cards;
+    font-family: $font-family-header;
     color: $blue-green;
+    font-weight: 500;
     font-size: 22px;
     text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
   }
-  
-  
   .parrafo {
-    font-family: $font-family-header;
+    font-family: $font-family-cards;
+    color: $gunmetal;
     font-size: 16px;
+    line-height: normal;
     text-align: center;
   }
