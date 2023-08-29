@@ -1,3 +1,14 @@
+.cards {
+  margin: 0 15px;
+  // width: 100vw;
+  // Este width para media query de tablet!!!
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+}
+
 .about-title {
   color: $blue-green;
   font-family: $font-family-header;
@@ -8,35 +19,32 @@
   padding: 20px;
 }
 
-.card-container {
+.card {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-}
-
-.card {
+  flex-direction: column;
   width: 100%;
-  max-width: 300px;
   margin: 0 15px;
   text-align: center;
-}
+  align-content: center;
+  }
 
-.picture {
+.card__picture {
   border: 5px solid $black-8;
   border-radius: 4px;
   width: 185px;
   max-height: 185px;
+  align-self: center;
 }
-
-.picture-title {
+.card__title {
   font-family: $font-family-cards;
   font-weight: 600;
   font-size: 20px;
   padding: 15px;
   align-content: center;
 }
-
-.picture-description {
+.card__description {
+  display: flex;
   color: $gunmetal;
   font-family: $font-family-cards;
   font-weight: 400;
@@ -44,21 +52,22 @@
   line-height: 1.5;
   align-content: center;
   margin-top: 5px;
+  max-width: 300px;
 }
-
-.icon-box {
+.card__icons {
   display: flex;
   justify-content: center;
   padding: 20px;
-}
-
-.icons {
-  display: flex;
   gap: 15px;
   padding: 20px;
   text-align: center;
 }
-
-.icon {
+.card__icons--icon{
   color: $blue-green;
 }
+
+
+
+
+
+
