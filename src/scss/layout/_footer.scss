@@ -1,8 +1,42 @@
-.page__footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100vw;
-  padding: 1rem;
-  color: $color-secondary;
+.footer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 250px;
 }
+
+.footer-name {
+  padding-top: 30px;
+}
+
+.footer-nav {
+  padding-top: 20px;
+  display: flex;
+}
+
+.ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-item {
+  list-style: none;
+  text-transform: uppercase;
+  justify-content: center;
+}
+
+.list {
+  text-decoration: none;
+  color: $black;
+}
+
+.footer-img {
+  padding-top: 30px;
+}
+
+.logo {
+  height: 45px;
+  width: 115.9px;
+}
+
