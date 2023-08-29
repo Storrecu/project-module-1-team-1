@@ -1,27 +1,23 @@
-ul {
-  list-style: none;
-  text-decoration: none;
-}
-.header_menu {
+.header {
   text-transform: uppercase;
   position: fixed;
   width: 100%;
   z-index: 100;
   top: 0;
   left: 0;
-  color: $white;
   font-family: $font-family-header;
   opacity: 90%;
-& name {
-  background-color: $blue-green;
-  height: 60px;
-  padding: 15px;
-  font-size: 16px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-}
+  color: $white;
+    &__name {
+      background-color: $blue-green;
+      height: 60px;
+      padding: 15px;
+      font-size: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
 .navegation {
   background-color: $aqua;
   font-size: 15px;
@@ -29,4 +25,9 @@ ul {
   display: flex;
   align-items: center;
   justify-content: space-around;
+  &__list {
+    color:$white;
+    list-style: none;
+    text-decoration: none;
+  }
 }
