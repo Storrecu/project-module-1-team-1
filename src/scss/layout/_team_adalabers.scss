@@ -8,27 +8,25 @@
   padding: 20px;
 }
 
-.card-container {
+.card {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-}
-
-.card {
+  justify-content: center; 
   width: 100%;
   max-width: 300px;
   margin: 0 15px;
   text-align: center;
-}
+  }
 
-.picture {
+
+.card__picture {
   border: 5px solid $black-8;
   border-radius: 4px;
   width: 185px;
   max-height: 185px;
 }
 
-.picture-title {
+.card__title {
   font-family: $font-family-cards;
   font-weight: 600;
   font-size: 20px;
@@ -36,7 +34,7 @@
   align-content: center;
 }
 
-.picture-description {
+.card__description {
   color: $gunmetal;
   font-family: $font-family-cards;
   font-weight: 400;
@@ -46,19 +44,25 @@
   margin-top: 5px;
 }
 
-.icon-box {
+.card__icons {
   display: flex;
   justify-content: center;
   padding: 20px;
-}
-
-.icons {
-  display: flex;
   gap: 15px;
   padding: 20px;
   text-align: center;
 }
 
-.icon {
+.card__icons--icon{
   color: $blue-green;
 }
+
+// @media all and (min-width:768px) {
+//   .card-container:nth-child(even) {
+//     flex-direction:column;
+    
+//   }
+//   .container-text:nth.child(even) {
+//     display:inline;
+//   }
+// }
