@@ -29,3 +29,27 @@
     color: $white;
   }
 }
+@media all and (min-width: 768px) {
+  .header{
+    display: flex;
+    &__name {
+    width: 65%;
+    padding-left: 45px;
+    align-items: center;justify-content: start;
+  }
+}
+  .navegation {
+    height: 60px;
+    width: 120%;
+    padding-right: 100px;
+    background-color: transparent;
+    background-color: $blue-green;
+    gap: 10px;
+  }
+}
+@media all and (min-width: 1200px){
+  .navegation {
+    padding-right: 138px;
+    padding-left: 45px;
+}
+}
