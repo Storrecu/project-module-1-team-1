@@ -1,32 +1,33 @@
 .hero {
-    background-image: url(../images/imagen.jpg);
-    height: 500px;
+    background-image: url(../images/retocada.png);
+    height: 17rem;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-  }
-  .lema {
-    background-color: $white;
-    color: $black;
-    font-family: $font-family-header;
-    font-weight: 500;
-    font-size: 18px;
-    padding: 15px 10px;
-    text-align: center;
-    margin-left: 20px;
-    margin-right: 20px;
-    z-index: 3;
-    transform: translateY(470px);
-  }
-  .teamcontainer__text {
-    text-align: center;
-    font-family: $font-family-cards;
-    line-height: normal;
-    color: $gunmetal;
-    margin-left: 15px;
-    margin-right: 15px;
-  }
-  .teamcontainer__title {
+   
+    &__lema {
+      background-color: $white;
+      color: $black;
+      font-family: $font-family-header;
+      font-weight: 500;
+      font-size: 18px;
+      padding: 15px 10px;
+      text-align: center;
+      margin-left: 20px;
+      margin-right: 20px;
+      z-index: 3;
+      transform: translateY(260px);
+      @media all and (min-width:768px){
+        display: flex;
+        margin-right: 300px;
+        opacity: 0.8;
+        margin-left: 45px;
+        transform: translateY(225px);
+      }
+     
+  } 
+ }
+ .teamcontainer__title {
     font-family: $font-family-header;
     font-weight: 500;
     color: $aqua;
@@ -36,6 +37,15 @@
     padding-top: 50px;
     padding-bottom: 15px;
   }
+  .teamcontainer__text {
+    text-align: center;
+    font-family: $font-family-cards;
+    line-height: normal;
+    color: $gunmetal;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  
   .teamcontainer div {
     padding-top: 30px;
     padding-bottom: 30px;
@@ -56,20 +66,22 @@
     position: relative;
     display: flex;
     justify-content: center;
-  }
-   .container__name {
-    font-family: $font-family-header;
-    color: $blue-green;
-    font-weight: 500;
-    font-size: 22px;
-    text-align: center;
-    padding-top: 15px;
-    padding-bottom: 15px;
-  }
-  .container__text {
-    font-family: $font-family-cards;
-    color: $gunmetal;
-    font-size: 16px;
-    line-height: normal;
-    text-align: center;
+
+    &__name {
+      font-family: $font-family-header;
+      color: $blue-green;
+      font-weight: 500;
+      font-size: 22px;
+      text-align: center;
+      padding-top: 15px;
+      padding-bottom: 15px;
+    }
+
+    &__text {
+      font-family: $font-family-cards;
+      color: $gunmetal;
+      font-size: 16px;
+      line-height: normal;
+      text-align: center;
+    }
   }
