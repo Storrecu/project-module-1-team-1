@@ -1,3 +1,14 @@
+.cards {
+  margin: 0 15px;
+  // width: 100vw;
+  // Este width para media query de tablet!!!
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+}
+
 .about-title {
   color: $blue-green;
   font-family: $font-family-header;
@@ -11,21 +22,20 @@
 .card {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center; 
+  flex-direction: column;
   width: 100%;
-  max-width: 300px;
   margin: 0 15px;
   text-align: center;
+  align-content: center;
   }
-
 
 .card__picture {
   border: 5px solid $black-8;
   border-radius: 4px;
   width: 185px;
   max-height: 185px;
+  align-self: center;
 }
-
 .card__title {
   font-family: $font-family-cards;
   font-weight: 600;
@@ -33,8 +43,8 @@
   padding: 15px;
   align-content: center;
 }
-
 .card__description {
+  display: flex;
   color: $gunmetal;
   font-family: $font-family-cards;
   font-weight: 400;
@@ -42,8 +52,8 @@
   line-height: 1.5;
   align-content: center;
   margin-top: 5px;
+  max-width: 300px;
 }
-
 .card__icons {
   display: flex;
   justify-content: center;
@@ -52,17 +62,12 @@
   padding: 20px;
   text-align: center;
 }
-
 .card__icons--icon{
   color: $blue-green;
 }
 
-// @media all and (min-width:768px) {
-//   .card-container:nth-child(even) {
-//     flex-direction:column;
-    
-//   }
-//   .container-text:nth.child(even) {
-//     display:inline;
-//   }
-// }
+
+
+
+
+
