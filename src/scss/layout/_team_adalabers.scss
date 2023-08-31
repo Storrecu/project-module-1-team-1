@@ -4,11 +4,9 @@
   // Este width para media query de tablet!!!
   display: flex;
   flex-direction: column;
-
   justify-content: center;
   align-items: center;
 }
-
 .about-title {
   color: $blue-green;
   font-family: $font-family-header;
@@ -18,7 +16,6 @@
   text-align: center;
   padding: 20px;
 }
-
 .card {
   display: flex;
   flex-wrap: wrap;
@@ -27,47 +24,54 @@
   margin: 0 15px;
   text-align: center;
   align-content: center;
+  &__picture {
+    border: 5px solid $black-8;
+    border-radius: 4px;
+    width: 185px;
+    max-height: 185px;
+    align-self: center;
   }
-
-.card__picture {
-  border: 5px solid $black-8;
-  border-radius: 4px;
-  width: 185px;
-  max-height: 185px;
-  align-self: center;
+  &__title {
+    font-family: $font-family-cards;
+    font-weight: 600;
+    font-size: 20px;
+    padding: 15px;
+    align-content: center;
+  }
+  &__description {
+    display: flex;
+    color: $gunmetal;
+    font-family: $font-family-cards;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    align-content: center;
+    margin-top: 5px;
+    max-width: 300px;
+  }
+  &__icons {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    gap: 15px;
+    padding: 20px;
+    text-align: center;
+  }
+  &__icons--icon{
+    color: $blue-green;
+  }
 }
-.card__title {
-  font-family: $font-family-cards;
-  font-weight: 600;
-  font-size: 20px;
-  padding: 15px;
-  align-content: center;
+@media (min-width:768px) and (max-width: 1200px) {
+  .card:nth-child(even) {
+    text-align:left;
+    flex-direction:row;
+    padding-left: 60px;
+    gap:30px;
+  }
+  .card:nth-child(odd){
+    text-align:right;
+    flex-direction:row-reverse;
+    padding-right: 60px;
+    gap:30px;
+  }
 }
-.card__description {
-  display: flex;
-  color: $gunmetal;
-  font-family: $font-family-cards;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-  align-content: center;
-  margin-top: 5px;
-  max-width: 300px;
-}
-.card__icons {
-  display: flex;
-  justify-content: center;
-  padding: 20px;
-  gap: 15px;
-  padding: 20px;
-  text-align: center;
-}
-.card__icons--icon{
-  color: $blue-green;
-}
-
-
-
-
-
-
