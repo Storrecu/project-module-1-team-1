@@ -15,9 +15,12 @@
       font-size: 16px;
       display: flex;
       align-items: center;
-      justify-content: center;
+      justify-content: center; 
+      :hover{
+        transform: scale(0.9);
     }
-  }
+  } 
+}
 .navegation {
   background-color: $aqua;
   font-size: 15px;
@@ -27,7 +30,10 @@
   justify-content: space-around;
   &__list{
     color: $white;
-  }
+    :hover{
+      transform: scale(0.9);
+    }
+  }  
 }
 @media all and (min-width: 768px) {
   .header{
@@ -35,7 +41,8 @@
     &__name {
     width: 65%;
     padding-left: 45px;
-    align-items: center;justify-content: start;
+    align-items: center;
+    justify-content: start;
   }
 }
   .navegation {
