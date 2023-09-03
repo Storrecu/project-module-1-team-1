@@ -80,39 +80,88 @@
     margin-top: 30px;
     margin-bottom: 30px;
   &--parrafo{
+    line-height: 1.5;
+    text-align: center;
     margin-bottom: 20px;
     font-family: $font-family-cards;
     color: $gunmetal;
    }
   }
 }
+
 .form{
   display: flex;
   flex-direction: column;
   margin: 50px;
+  font-family: $font-family-cards;
+  
     &__name{
+      padding: 15px;
       font-size: 14px;
       font-family: $font-family-cards;
       color: $gunmetal;
-      margin: 15px;
+      margin-top: 30px;
+      margin-bottom: 30px;
+      
+    }
+
+    &__email {
+  padding: 15px;
+  font-size: 14px;
+  font-family: $font-family-cards;
+  color: $gunmetal;
+  margin-top: 30px;
+      margin-bottom: 30px;
+
+    }
+
+    &__telephone {
+      padding: 15px;
+      font-size: 14px;
+      font-family: $font-family-cards;
+      color: $gunmetal;
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
+
+    &__area {
+      
+      font-size: 14px;
+      font-family: $font-family-cards;
+      color: $gunmetal;
+      background-color: lightgray;
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
+
+
+
+
       :focus{
         background-color: $aqua;
     &--email::placeholder{
         color: black;
     }
     }
-    }
+
+
 }
 
+.asterisk {
+  color: $aqua;
+}
+
+
+
 .button{
+
   background-color: $blue-green;
   color: $white;
   font-family: $font-family-cards;
   text-transform: uppercase;
   padding: 10px;
-  margin: 15px;
-  border-radius: 10px;
-}
+  border-radius: 4px;}
+
 
   .footer {
     display: flex;

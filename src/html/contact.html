@@ -5,6 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Contacto</title>
   <link rel="stylesheet" href="./assets/css/main.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Roboto:wght@300&family=Rubik:wght@300;400;500&family=Ysabeau+Infant:ital,wght@1,100&display=swap"
+    rel="stylesheet"/>
 </head>
 <body>
   <header class="header">
@@ -32,28 +37,25 @@
     <section class="section">
       <h1 class="section__title">Contacto</h1>
       <p class="section__title--parrafo">
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet,
-        placeat. Eius necessitatibus dolor delectus quibusdam deserunt enim
-        nisi minus suscipit ipsam labore sapiente voluptatibus nam neque,
-        molestiae maxime optio consequatur.
+        ¿Quieres renacer con nosotras? Para consultar cualquier duda con el equipo o sobre nuestra forma de trabajar, rellena el formulario y contactaremos contigo lo antes posible. Pronto recibiras noticias nuestras.
       </p>
       <p class="section__title--parrafo">
-        Todos los campos obligatorios con * son obligatorios.
+        Todos los campos obligatorios con <span class="asterisk">&#42;</span> son obligatorios.
       </p>
       <div>
         <form class="form">
-          <label for="firstname" class="form__name">Nombre completo *</label>
-          <input for="firstname" type="text" placeholder="Nombre..." id="firstname" name="firstname" required />
+          <label for="firstname">Nombre completo <span class="asterisk">&#42;</span></label>
+          <input class="form__name" for="firstname" type="text" placeholder="Nombre..." id="firstname" name="firstname" required />
 
-          <label for="email" class="form__name email">Email *</label>
-          <input class="form__name--email" for="email" type="email" placeholder="nombre.apellidos@mail.com" id="email"
+          <label for="email">Email <span class="asterisk">&#42;</span></label>
+          <input class="form__email" for="email" type="email" placeholder="nombre.apellidos@mail.com" id="email"
             name="firstname" required />
 
-          <label for="telephone" class="form__name">Teléfono</label>
-          <input for="telephone" type="number" placeholder="Ej:123456789" id="telephone" name="telephone" />
-          <label for="messages" class="form__name">Mensaje *<label>
-              <textarea rows="10" cols="30" id="messages" name="messages" required>¿Qué necesitas?</textarea>
-              <button class="button">Enviar</button>
+          <label for="telephone">Teléfono</label>
+          <input class="form__telephone" for="telephone" type="text-number" placeholder="Ej:123456789" id="telephone" name="telephone" />
+          <label for="messages" class="form__name">Mensaje <span class="asterisk">&#42;</span><label>
+              <textarea class="form__area" rows="5" cols="40" id="messages" name="messages" required>¿Qué necesitas?</textarea>
+              <a class="button" href="#">Enviar</a>
         </form>
       </div>
     </section>
