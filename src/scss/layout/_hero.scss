@@ -1,9 +1,9 @@
 .hero {
   background-image: url(../images/imagen.jpg);
   height: 500px;
-  background-size: cover;
+ background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position:inherit;
   &__lema {
   background-color: $white;
   color: $black;
