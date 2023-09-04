@@ -1,90 +1,145 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contacto</title>
-  <link rel="stylesheet" href="./assets/css/main.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Roboto:wght@300&family=Rubik:wght@300;400;500&family=Ysabeau+Infant:ital,wght@1,100&display=swap"
-    rel="stylesheet"/>
-</head>
-<body>
-  <header class="header">
-    <h1 class="header__name">
-      <a href="./index.html" title="Rebirth" class="navegation__list">Rebirth Web</a>
-    </h1>
-    <nav>
-      <ul class="navegation">
-        <li>
-          <a href="./index.html#teamcontainer" title="Ir a Equipo" class="navegation__list">Equipo</a>
-        </li>
-        <li>
-          <a href="./index.html#about-us" title="Ir a Quienes Somos" class="navegation__list">Quienes Somos</a>
-        </li>
-        <li>
-          <a href="#" title="Ir a Contacto" class="navegation__list">Contacto</a>
-        </li>
-      </ul>
-    </nav>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacto</title>
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Roboto:wght@300&family=Rubik:wght@300;400;500&family=Ysabeau+Infant:ital,wght@1,100&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="header__name">
+        <a href="./index.html" title="Rebirth" class="navegation__list"
+          >Rebirth Web</a
+        >
+      </h1>
+      <nav>
+        <ul class="navegation">
+          <li>
+            <a
+              href="./index.html#teamcontainer"
+              title="Ir a Equipo"
+              class="navegation__list"
+              >Equipo</a
+            >
+          </li>
+          <li>
+            <a
+              href="./index.html#about-us"
+              title="Ir a Quienes Somos"
+              class="navegation__list"
+              >Quienes Somos</a
+            >
+          </li>
+          <li>
+            <a href="#" title="Ir a Contacto" class="navegation__list"
+              >Contacto</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-  <main>
-    <div class="image"></div>
+    <main>
+      <div class="image"></div>
 
-    <section class="section">
-      <h1 class="section__title">Contacto</h1>
-      <p class="section__title--parrafo">
-        ¿Quieres renacer con nosotras? Para consultar cualquier duda con el equipo o sobre nuestra forma de trabajar, rellena el formulario y contactaremos contigo lo antes posible. Pronto recibiras noticias nuestras.
-      </p>
-      <p class="section__title--parrafo">
-        Todos los campos obligatorios con <span class="asterisk">&#42;</span> son obligatorios.
-      </p>
-      <div>
-        <form class="form">
-          <label  class="name" for="firstname">Nombre completo <span class="asterisk">&#42;</span></label>
-          <input class="form__name" for="firstname" type="text" placeholder="Nombre..." id="firstname" name="firstname" required />
+      <section class="section">
+        <h1 class="section__title">Contacto</h1>
+        <p class="section__title--parrafo">
+          ¿Quieres renacer con nosotras? Para consultar cualquier duda con el
+          equipo o sobre nuestra forma de trabajar, rellena el formulario y
+          contactaremos contigo lo antes posible. Pronto recibiras noticias
+          nuestras.
+        </p>
+        <p class="section__title--parrafo">
+          Todos los campos obligatorios con
+          <span class="asterisk">&#42;</span> son obligatorios.
+        </p>
+        <div>
+          <form class="form">
+            <label class="name" for="firstname"
+              >Nombre completo <span class="asterisk">&#42;</span></label
+            >
+            <input
+              class="form__name"
+              for="firstname"
+              type="text"
+              placeholder="Nombre..."
+              id="firstname"
+              name="firstname"
+              required
+            />
 
-          <label class="email"for="email">Email <span class="asterisk">&#42;</span></label>
-          <input class="form__email" for="email" type="email" placeholder="nombre.apellidos@mail.com" id="email"
-            name="firstname" required />
+            <label class="email" for="email"
+              >Email <span class="asterisk">&#42;</span></label
+            >
+            <input
+              class="form__email"
+              for="email"
+              type="email"
+              placeholder="nombre.apellidos@mail.com"
+              id="email"
+              name="firstname"
+              required
+            />
 
-          <label class="telephone" for="telephone">Teléfono</label>
-          <input class="form__telephone" for="telephone" type="text-number" placeholder="Ej:123456789" id="telephone" name="telephone" />
+            <label class="telephone" for="telephone">Teléfono</label>
+            <input
+              class="form__telephone"
+              for="telephone"
+              type="text-number"
+              placeholder="Ej:123456789"
+              id="telephone"
+              name="telephone"
+            />
 
-          <label for="messages" class="form__message">Mensaje <span class="asterisk1">&#42;</span></label>
-          <textarea class="form__area" rows="10" cols="45" id="messages" name="messages" placeholder="¿Qué necesitas?" required></textarea>
+            <label for="messages" class="form__message"
+              >Mensaje <span class="asterisk1">&#42;</span></label
+            >
+            <textarea
+              class="form__area"
+              rows="10"
+              cols="45"
+              id="messages"
+              name="messages"
+              placeholder="¿Qué necesitas?"
+              required
+            ></textarea>
 
-          <a class="button" href="#">Enviar</a>
-        </form>
+            <a class="button" href="#">Enviar</a>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="ffooter">
+      <div class="ffooter__name">
+        <p>Rebirth Web ©2023</p>
       </div>
-    </section>
-  </main>
 
-  <footer class="footer">
-    <div class="footer__name">
-      <p>Rebirth Web ©2023</p>
-    </div>
+      <nav class="ffooter__nav">
+        <ul class="ffooter__nav__ul">
+          <li class="ffooter__item">
+            <a class="ffooter__link" href="#">Equipo</a>
+          </li>
+          <li class="ffooter__item">
+            <a class="ffooter__link" href="#">Quiénes Somos</a>
+          </li>
+          <li class="ffooter__item">
+            <a class="ffooter__link" href="#">Contacto</a>
+          </li>
+        </ul>
+      </nav>
 
-    <nav class="footer__nav">
-      <ul class="footer__nav__ul">
-        <li class="footer__item">
-          <a class="footer__link" href="#">Equipo</a>
-        </li>
-        <li class="footer__item">
-          <a class="footer__link" href="#">Quiénes Somos</a>
-        </li>
-        <li class="footer__item">
-          <a class="footer__link" href="#">Contacto</a>
-        </li>
-      </ul>
-    </nav>
-
-    <div class="footer__img">
-      <img class="logo" src="./assets/images/logo-adalab.png" alt="LOGO" />
-    </div>
-  </footer>
-</body>
+      <div class="ffooter__img">
+        <img class="logo" src="./assets/images/logo-adalab.png" alt="LOGO" />
+      </div>
+    </footer>
+  </body>
 </html>
