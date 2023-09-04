@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contacto</title>
+  <link rel="stylesheet" href="./assets/css/main.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Roboto:wght@300&family=Rubik:wght@300;400;500&family=Ysabeau+Infant:ital,wght@1,100&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <include src="./partials/header.html"></include>
+
+  <main>
+    <div class="image"></div>
+
+    <section class="section">
+      <h1 class="section__title">Contacto</h1>
+      <p class="section__title--parrafo">
+        ¿Quieres renacer con nosotras? Para consultar cualquier duda con el equipo o sobre nuestra forma de trabajar,
+        rellena el formulario y contactaremos contigo lo antes posible. Pronto recibiras noticias nuestras.
+      </p>
+      <p class="section__title--parrafo">
+        Todos los campos obligatorios con <span class="asterisk">&#42;</span> son obligatorios.
+      </p>
+
+      <form class="form">
+
+        <label class="name" for="firstname">Nombre completo <span class="asterisk">&#42;</span></label>
+        <input class="form__name" for="firstname" type="text" placeholder="Nombre..." id="firstname" name="firstname"
+          required />
+
+        <span class="box">
+
+          <span class="boxemail"><label class="email" for="email">Email <span class="asterisk">&#42;</span></label>
+            <input class="form__email" for="email" type="email" placeholder="nombre.apellidos@mail.com" id="email"
+              name="firstname" required /></span>
+
+          <span class="boxtelephone">
+            <label class="telephone" for="telephone">Teléfono</label>
+
+            <input class="form__telephone" for="telephone" type="text-number" placeholder="Ej:123456789" id="telephone"
+              name="telephone" /></span></span>
+
+        <label for="messages" class="form__message">Mensaje <span class="asterisk1">&#42;</span></label>
+        <textarea class="form__area" rows="10" cols="45" id="messages" name="messages" placeholder="¿Qué necesitas?"
+          required></textarea>
+
+        <a class="form__button" href="#">Enviar</a>
+      </form>
+      </div>
+
+      <include src="./partials/footer.html"></include>
+</body>
+
+</html>

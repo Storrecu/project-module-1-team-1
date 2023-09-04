@@ -1,5 +1,65 @@
-.page__header {
+.container__navegation {
+  @media all and (min-width: 768px) {
+    width: 100vw;
+  }
+}
+
+.header {
+  text-transform: uppercase;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  font-family: $font-family-header;
+  opacity: 90%;
+  color: $white;
+  &__name {
+    background-color: $blue-green;
+    height: 60px;
+    padding: 15px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    :hover {
+      transform: scale(0.9);
+    }
+  }
+  @media all and (min-width: 768px) {
+    display: flex;
+    &__name {
+      width: 65%;
+      padding-left: 45px;
+      align-items: center;
+      justify-content: start;
+    }
+  }
+}
+
+.navegation {
+  background-color: $aqua;
+  font-size: 15px;
+  height: 45px;
   display: flex;
-  justify-content: space-evenly;
-  margin-bottom: 3rem;
+  align-items: center;
+  justify-content: space-around;
+  :hover {
+    transform: scale(0.9);
+  }
+  &__list {
+    color: $white;
+  }
+
+  @media all and (min-width: 768px) {
+    height: 60px;
+    width: 120%;
+    padding-right: 100px;
+    background-color: transparent;
+    background-color: $blue-green;
+    gap: 10px;
+  }
+  @media all and (min-width: 1200px) {
+    padding-right: 138px;
+  }
 }

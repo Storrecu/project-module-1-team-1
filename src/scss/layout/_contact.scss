@@ -1,0 +1,271 @@
+.header {
+  text-transform: uppercase;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  font-family: $font-family-header;
+  opacity: 90%;
+  color: $white;
+  &__name {
+    background-color: $blue-green;
+    height: 60px;
+    padding: 15px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    :hover {
+      transform: scale(0.9);
+    }
+  }
+}
+@media all and (min-width: 768px) {
+  .header {
+    display: flex;
+    &__name {
+      width: 65%;
+      padding-left: 45px;
+      align-items: center;
+      justify-content: start;
+    }
+  }
+}
+
+.navegation {
+  background-color: $aqua;
+  font-size: 15px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  &__list {
+    color: $white;
+  }
+}
+
+@media all and (min-width: 768px) {
+  .navegation {
+    height: 60px;
+    width: 120%;
+    padding-right: 100px;
+    background-color: transparent;
+    background-color: $blue-green;
+    gap: 10px;
+  }
+}
+
+@media all and (min-width: 1200px) {
+  .navegation {
+    padding-right: 138px;
+    padding-left: 45px;
+  }
+}
+
+.image {
+  background-image: url("../images/test10.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 300px;
+  @media all and (min-width: 768px) {
+    background-position: 85%;
+  }
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 15px;
+  &__title {
+    text-transform: uppercase;
+    font-size: 24px;
+    color: $blue-green;
+    font-family: $font-family-header;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    &--parrafo {
+      line-height: 1.5;
+      text-align: center;
+      margin-bottom: 20px;
+      font-family: $font-family-cards;
+      color: $gunmetal;
+    }
+  }
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  margin: 50px;
+  font-family: $font-family-cards;
+  @media all and (min-width: 768px) {
+    width: 50vw;
+  }
+
+  &__name {
+    padding: 15px;
+    font-size: 14px;
+    font-family: $font-family-cards;
+    color: $gunmetal;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+
+  &__email {
+    padding: 15px;
+    font-size: 14px;
+    font-family: $font-family-cards;
+    color: $gunmetal;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    // @media (min-width:1200px){
+    //   width: 60%;
+    //   display: inline-block;
+    // }
+  }
+
+  &__telephone {
+    padding: 15px;
+    font-size: 14px;
+    font-family: $font-family-cards;
+    color: $gunmetal;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    // @media (min-width:1200px){
+    //   width: 30%;
+    //   display: inline-block;
+    // }
+  }
+
+  &__message {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    font-family: $font-family-cards;
+    color: $gunmetal;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    position: relative;
+  }
+  &__area::placeholder {
+    font-family: $font-family-cards;
+    font-size: 14px;
+    padding: 10px;
+    color: $cool-grey;
+  }
+  &__button {
+    display: flex;
+    flex-direction: column;
+    background-color: $blue-green;
+    color: $white;
+    font-family: $font-family-cards;
+    text-transform: uppercase;
+    padding: 10px;
+    border-radius: 4px;
+    text-align: center;
+    margin-top: 15px;
+    @media all and (min-width: 768px) {
+      width: 160px;
+      margin-left: 31vw;
+    }
+  }
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  @media (min-width: 1200px) {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+  }
+}
+.boxemail {
+  display: flex;
+  flex-direction: column;
+  @media (min-width: 1200px) {
+    width: 70%;
+  }
+}
+.boxtelephone {
+  display: flex;
+  flex-direction: column;
+  @media (min-width: 1200px) {
+    width: 30%;
+  }
+}
+
+.name {
+  font-size: 14px;
+  font-family: $font-family-cards;
+  color: $gunmetal;
+}
+.telephone {
+  font-size: 14px;
+  font-family: $font-family-cards;
+  color: $gunmetal;
+}
+
+.email {
+  font-size: 14px;
+  font-family: $font-family-cards;
+  color: $gunmetal;
+}
+
+.asterisk {
+  color: $aqua;
+}
+.asterisk1 {
+  color: $aqua;
+  position: absolute;
+  margin-left: 60px;
+  margin-bottom: 20px;
+}
+
+.foot {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 250px;
+  width: 100%;
+}
+
+.foot__name {
+  font-family: $font-family-cards;
+  color: $cool-grey;
+  padding-top: 30px;
+}
+
+.foot__nav {
+  padding-top: 20px;
+  display: flex;
+}
+
+.foot__nav__ul {
+  font-family: $font-family-cards;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.foot__item {
+  list-style: none;
+  text-transform: uppercase;
+  justify-content: center;
+}
+
+.foot__link {
+  text-decoration: none;
+  color: $gunmetal;
+}
+
+.foot__img {
+  padding-top: 30px;
+}
+
+.logo {
+  height: 45px;
+  width: 115.9px;
+}
