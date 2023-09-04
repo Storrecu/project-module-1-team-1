@@ -68,6 +68,9 @@
   background-repeat: no-repeat;
   background-size: cover;
   height: 300px;
+  @media all and (min-width:768px){
+    background-position: 85%;
+  }
 }
 
 .section{
@@ -97,15 +100,17 @@
   flex-direction: column;
   margin: 50px;
   font-family: $font-family-cards;
+  @media all and (min-width:768px){
+    width: 50vw;
+  }
   
     &__name{
       padding: 15px;
       font-size: 14px;
       font-family: $font-family-cards;
-      color: $gunmetal;
+      color:$gunmetal;
       margin-top: 10px;
       margin-bottom: 20px;
-      
     }
 
     &__email {
@@ -115,6 +120,10 @@
       color: $gunmetal;
       margin-top: 10px;
       margin-bottom: 20px;
+      // @media (min-width:1200px){
+      //   width: 60%;
+      //   display: inline-block;
+      // }
       }
 
     &__telephone {
@@ -124,6 +133,10 @@
       color: $gunmetal;
       margin-top: 10px;
       margin-bottom: 10px;
+      // @media (min-width:1200px){
+      //   width: 30%;
+      //   display: inline-block;
+      // }
     }
 
     &__message {
@@ -142,34 +155,66 @@
       padding: 10px;
       color:$cool-grey;
     }
+    &__button{
+      display: flex;
+      flex-direction: column;
+      background-color: $blue-green;
+      color: $white;
+      font-family: $font-family-cards;
+      text-transform: uppercase;
+      padding: 10px;
+      border-radius: 4px;
+      text-align: center;
+      margin-top: 15px;
+      @media all and (min-width: 768px){
+        width: 160px;
+        margin-left: 31vw;
+      }
+    }
 }
-.name{
+
+.box{
+  display: flex;
+  flex-direction: column;
+  @media (min-width:1200px){
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  }
+}
+.boxemail{
+  display: flex;
+  flex-direction: column;
+  @media (min-width:1200px){
+    width: 70%;
+  }
+}
+.boxtelephone{
+  display: flex;
+  flex-direction: column;
+  @media (min-width:1200px){
+      width: 30%;
+  
+  }
+}
+
+  .name{
       font-size: 14px;
       font-family: $font-family-cards;
       color: $gunmetal;
-}
-.telephone{
-  font-size: 14px;
+    }
+  .telephone{
+      font-size: 14px;
       font-family: $font-family-cards;
       color: $gunmetal;
-}
-.email{
-    font-size: 14px;
+    }
+
+  .email{
+      font-size: 14px;
       font-family: $font-family-cards;
       color: $gunmetal;
-}
-.button{
-  display: flex;
-  flex-direction: column;
-  background-color: $blue-green;
-  color: $white;
-  font-family: $font-family-cards;
-  text-transform: uppercase;
-  padding: 10px;
-  border-radius: 4px;
-  text-align: center;
-  margin-top: 15px;
-}
+    }
+
 
 .asterisk {
   color: $aqua;
@@ -182,45 +227,43 @@
 }
 
 
-
-
-.footer {
+.foot {
   display: flex;
   align-items: center;
   flex-direction: column;
   height: 250px;
 }
   
-  .footer__name {
+  .foot__name {
     font-family: $font-family-cards;
     color: $cool-grey;
     padding-top: 30px;
   }
   
-  .footer__nav {
+  .foot__nav {
     padding-top: 20px;
     display: flex;
   }
   
-  .footer__nav__ul {
+  .foot__nav__ul {
     font-family: $font-family-cards;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
   
-  .footer__item {
+  .foot__item {
     list-style: none;
     text-transform: uppercase;
     justify-content: center;
   }
   
-  .footer__link {
+  .foot__link {
     text-decoration: none;
     color: $gunmetal;
   }
   
-  .footer__img {
+  .foot__img {
     padding-top: 30px;
   }
   
