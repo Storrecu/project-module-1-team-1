@@ -49,55 +49,30 @@
     <main>
       <div class="image"></div>
 
-      <section class="section">
-        <h1 class="section__title">Contacto</h1>
-        <p class="section__title--parrafo">
-          ¿Quieres renacer con nosotras? Para consultar cualquier duda con el
-          equipo o sobre nuestra forma de trabajar, rellena el formulario y
-          contactaremos contigo lo antes posible. Pronto recibiras noticias
-          nuestras.
-        </p>
-        <p class="section__title--parrafo">
-          Todos los campos obligatorios con
-          <span class="asterisk">&#42;</span> son obligatorios.
-        </p>
-        <div>
-          <form class="form">
-            <label class="name" for="firstname"
-              >Nombre completo <span class="asterisk">&#42;</span></label
-            >
-            <input
-              class="form__name"
-              for="firstname"
-              type="text"
-              placeholder="Nombre..."
-              id="firstname"
-              name="firstname"
-              required
-            />
+    <section class="section">
+      <h1 class="section__title">Contacto</h1>
+      <p class="section__title--parrafo">
+        ¿Quieres renacer con nosotras? Para consultar cualquier duda con el equipo o sobre nuestra forma de trabajar, rellena el formulario y contactaremos contigo lo antes posible. Pronto recibiras noticias nuestras.
+      </p>
+      <p class="section__title--parrafo">
+        Todos los campos obligatorios con <span class="asterisk">&#42;</span> son obligatorios.
+      </p>
 
-            <label class="email" for="email"
-              >Email <span class="asterisk">&#42;</span></label
-            >
-            <input
-              class="form__email"
-              for="email"
-              type="email"
-              placeholder="nombre.apellidos@mail.com"
-              id="email"
-              name="firstname"
-              required
-            />
+        <form class="form">
+          
+          <label  class="name" for="firstname">Nombre completo <span class="asterisk">&#42;</span></label>
+          <input class="form__name" for="firstname" type="text" placeholder="Nombre..." id="firstname" name="firstname" required />
 
-            <label class="telephone" for="telephone">Teléfono</label>
-            <input
-              class="form__telephone"
-              for="telephone"
-              type="text-number"
-              placeholder="Ej:123456789"
-              id="telephone"
-              name="telephone"
-            />
+          <span class="box">
+
+          <span class="boxemail"><label class="email"for="email">Email <span class="asterisk">&#42;</span></label>
+          <input class="form__email" for="email" type="email" placeholder="nombre.apellidos@mail.com" id="email"
+            name="firstname" required/></span>
+
+          <span class="boxtelephone">
+          <label class="telephone" for="telephone">Teléfono</label>
+
+          <input class="form__telephone" for="telephone" type="text-number" placeholder="Ej:123456789" id="telephone" name="telephone" /></span></span>
 
             <label for="messages" class="form__message"
               >Mensaje <span class="asterisk1">&#42;</span></label
@@ -112,34 +87,32 @@
               required
             ></textarea>
 
-            <a class="button" href="#">Enviar</a>
-          </form>
-        </div>
-      </section>
-    </main>
-
-    <footer class="ffooter">
-      <div class="ffooter__name">
-        <p>Rebirth Web ©2023</p>
+          <a class="form__button" href="#">Enviar</a>
+        </form>
       </div>
 
-      <nav class="ffooter__nav">
-        <ul class="ffooter__nav__ul">
-          <li class="ffooter__item">
-            <a class="ffooter__link" href="#">Equipo</a>
-          </li>
-          <li class="ffooter__item">
-            <a class="ffooter__link" href="#">Quiénes Somos</a>
-          </li>
-          <li class="ffooter__item">
-            <a class="ffooter__link" href="#">Contacto</a>
-          </li>
-        </ul>
-      </nav>
+  <footer class="foot">
+    <div class="foot__name">
+      <p>Rebirth Web ©2023</p>
+    </div>
 
-      <div class="ffooter__img">
-        <img class="logo" src="./assets/images/logo-adalab.png" alt="LOGO" />
-      </div>
-    </footer>
-  </body>
+    <nav class="foot__nav">
+      <ul class="foot__nav__ul">
+        <li class="foot__item">
+          <a class="foot__link" href="#">Equipo</a>
+        </li>
+        <li class="foot__item">
+          <a class="foot__link" href="#">Quiénes Somos</a>
+        </li>
+        <li class="foot__item">
+          <a class="foot__link" href="#">Contacto</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="foot__img">
+      <img class="logo" src="./assets/images/logo-adalab.png" alt="LOGO" />
+    </div>
+  </footer>
+</body>
 </html>
