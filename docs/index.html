@@ -1,68 +1,201 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Adalab Web Starter Kit</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="./assets/css/main.css" />
-    <link rel="icon" href="./assets/images/favicon.png" />
-  </head>
 
-  <body>
-    <div class="page">
-      <header class="page__header">
-        <img src="./assets/images/logo-adalab.png" alt="Adalab">
-        <h1>Bienvenidos a Adalab</h1>
-      </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rebirth Web</title>
+  <link rel="stylesheet" href="./assets/css/main.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Roboto:wght@300&family=Rubik:wght@300;400;500&family=Ysabeau+Infant:ital,wght@1,100&display=swap"
+    rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/66349fc88a.js" crossorigin="anonymous"></script>
+</head>
 
-      <main class="page__main">
-        <h2>Este es el starter kit de Adalab</h2>
-        <p>Lo usamos para aprender:</p>
-        <ul class="main__list">
-          <li>Sass</li>
-          <li>HTML partials</li>
-          <li>Gulp</li>
-          <li>y muchas cosas más</li>
-        </ul>
-        <p>Si quieres saber cúales son las rutas correctas para:</p>
-        <ul class="main__list">
-          <li>
-            una <code class="code">&lt;img /&gt;</code> mira el fichero
-            <code class="code">./src/html/partials/header.html</code>.
-          </li>
-          <li>
-            y para un <code class="code">background-image</code> mira el fichero
-            <code class="code">./src/html/scss/layout/_page.scss</code>.
-          </li>
-        </ul>
-        <p>
-          Si quieres saber cómo usar un partial HTML dentro de otro partial, busca en la carperta
-          <code class="code">./src/html/index.html</code> y
-          <code class="code">./src/html/partials/main.html</code>, y verás cómo estamos creando estos
-          enlaces:
+<body>
+  <header class="header">
+    <h1 class="header__name">
+      <a href="./index.html" title="Rebirth" class="navegation__list">Rebirth Web</a>
+    </h1>
+    <nav class="container__navegation">
+      <ul class="navegation">
+        <li>
+          <a href="#teamcontainer" title="Ir a Equipo" class="navegation__list">Equipo</a>
+        </li>
+        <li>
+          <a href="#about-us" title="Ir a Quienes Somos" class="navegation__list">Quienes Somos</a>
+        </li>
+        <li>
+          <a href="./contact.html" title="Ir a Contacto" class="navegation__list">Contacto</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section>
+      <div class="hero">
+        <div class="hero__lema" id="teamcontainer">
+          <h2>Tejiendo sueños, forjando éxito</h2>
+        </div>
+      </div>
+    </section>
+
+    <section class="teamcontainer">
+      <div>
+        <h2 class="teamcontainer__title">Equipo</h2>
+        <p class="teamcontainer__text">
+          Demostramos una resuelta determinación y un compromiso inquebrantable
+          con nuestra formación, compartimos la misma pasión por la tecnología, diseño digital y mostramos una
+          incansable
+          voluntad de aprender y
+          evolucionar.
         </p>
-        <ul class="main__list">
-          <li>
-            <a class="link__adalab" href="https://adalab.es">Adalab</a>
+        <p class="teamcontainer__text">
+          Nuestra perspectiva orientada a cumplir los objetivos que nos proponemos y el deseo por asegurarnos un futuro
+          profesional en un campo altamente competitivo y en constante cambio nos convierte en un grupo formidable y
+          prometedor.
+        </p>
+      </div>
+    </section>
+    <section class="super-container">
+      <section class="container" id="container">
+        <div class="container__square"></div>
+        <div class="container__div0">
+          <div class="container__div0__div1">
+            <h3 class="container__name">Fortalezas</h3>
+            <p class="container__text">
+              La comunicación efectiva, confianza mutua,
+              respeto por la diversidad y apoyo mutuo son cinco de las fortalezas que crea la unión en un equipo de trabajo
+              como el nuestro. Es esencial para lograr nuestros objetivos.
+            </p>
+          </div>
+          <div class="div2">
+            <h3 class="container__name">Debilidades</h3>
+            <p class="container__text" id="about-us">
+              Siempre se puede mejorar, algunas podemos tener menos experiencia en ciertas áreas, miedo a tener un conflicto
+              por estar en desacuerdo, ser mas lentas o tener una organización diferente.
+              Pero ante todo somos un equipo y todas remamos hacia delante, si una se atasca el resto tira de ella.
+            </p>
+          </div>
+        </div>
+      </section>
+    </section>
+    <section class="cards" >
+      <h2 class="about-title">Quiénes Somos</h2>
+      <div class="card">
+        <img class="card__picture" src="./assets/images/photo-Ana.jpg" alt="Foto de Ana.">
+        <div class="card__info">
+          <h3 class="card__title">Ana Algorri Álvarez</h3>
+          <p class="card__description">Soy de Santander y tengo 27 años. He estudiado un grado en Creación y Diseño y
+            un
+            máster en Diseño Gráfico
+            Digital. Tras varias experiencias laborales decidí iniciarme en el mundo de la programación a través de un
+            bootcamp. Ahora, traigo toda mi creatividad y atención al detalle al mundo del desarrollo web.</p>
+          <ul class="card__icons">
+            <li><a href="#"><i class="card__icons--icon fa-brands fa-twitter"></i></a></li>
+            <li><a href=""><i class="card__icons--icon fa-brands fa-linkedin-in"></i></a></li>
+            <li><a href=""><i class="card__icons--icon fa-brands fa-github-alt"></i></a></li>
+            <li><a href=""><i class="card__icons--icon fa-solid fa-envelope"></i></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card__picture" src="./assets/images/photo-Andrea.jpg" alt="Foto de Ana.">
+        <div class="card__info">
+          <h3 class="card__title">Andrea Diéguez Garrido</h3>
+          <p class="card__description">Tengo 31 años y vengo de Valladolid. Estudié el Grado en Comercio y un Máster
+            de
+            Marketing Digital. Por casualidad, el mundo de la programación llegó a mi vida cuando estuve trabajando como
+            SEO Content, fue entonces cuando me di cuenta que me gustaba más la programación que el marketing. Ahora he
+            decidido apostar por ello gracias al Bootcamp de Adalab.</p>
+          <ul class="card__icons">
+            <li><a href="#"><i class="card__icons--icon fa-brands fa-twitter"></i></a></li>
+            <li><a href=""><i class="card__icons--icon fa-brands fa-linkedin-in"></i></a></li>
+            <li><a href=""><i class="card__icons--icon fa-brands fa-github-alt"></i></a></li>
+            <li><a href=""><i class="card__icons--icon fa-solid fa-envelope"></i></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card__picture" src="./assets/images/photo-cris.jpeg" alt="Foto de Ana.">
+        <div class="card__info">
+          <h3 class="card__title">Cristina Rodríguez García</h3>
+          <p class="card__description">Soy de Madrid, tengo 32 años. Estudié Historia del Arte, pero he
+            descubierto un mundo nuevo en la programación. Aunque parezca muy distante de mi pasión, la composición de
+            un
+            cuadro tiene bastante relación con la de una página web. No llegaré a ser Velazquez, pero me gustaría ser
+            una
+            gran developer</p>
+          <ul class="card__icons">
+            <li><a href="#"><i class="card__icons--icon fa-brands fa-twitter"></i></a></li>
+            <li><a href=""><i class="card__icons--icon fa-brands fa-linkedin-in"></i></a></li>
+            <li><a href=""><i class="card__icons--icon fa-brands fa-github-alt"></i></a></li>
+            <li><a href=""><i class="card__icons--icon fa-solid fa-envelope"></i></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card__picture" src="./assets/images/photo-Raquel.jpg" alt="Foto de Ana.">
+        <div class="card__info">
+          <h3 class="card__title">Raquel Collado Herrera</h3>
+          <p class="card__description">Soy de Madrid, tengo 34 años, tengo un grado medio en Gestión administrativa y
+            vengo del sector de servicio
+            de atención al cliente el cual me permitió desarrollar habilidades esenciales de comunicación.
+            Con intenciones de redirigir mi vida laboral inicio un bootcamp de programación web y me he convertido en
+            Adalaber.</p>
+          <ul class="card__icons">
+            <li><a href="#"><i class="card__icons--icon fa-brands fa-twitter"></i></a></li>
+            <li><a href=""><i class="card__icons--icon fa-brands fa-linkedin-in"></i></a></li>
+            <li><a href=""><i class="card__icons--icon fa-brands fa-github-alt"></i></a></li>
+            <li><a href=""><i class="card__icons--icon fa-solid fa-envelope"></i></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card__picture" src="./assets/images/photo-Silvia.jpg" alt="Foto de Ana.">
+        <div class="card__info">
+          <h3 class="card__title">Silvia Torres Cubero</h3>
+          <p class="card__description">Soy de Barcelona y tengo 30 años.
+            Estudié Una FPII de indústrias de la alimentación y después de trabajar varios años cara al público, me
+            decidí
+            a probar algo diferente para adaptarme a las nuevas necesidades del mundo laboral.</p>
+          <ul class="card__icons">
+            <li><a href="#"><i class="card__icons--icon fa-brands fa-twitter"></i></a></li>
+            <li><a href=""><i class="card__icons--icon fa-brands fa-linkedin-in"></i></a></li>
+            <li><a href=""><i class="card__icons--icon fa-brands fa-github-alt"></i></a></li>
+            <li><a href=""><i class="card__icons--icon fa-solid fa-envelope"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footer__name">
+        <p>Rebirth Web ©2023</p>
+      </div>
 
+      <nav class="footer__nav">
+        <ul class="footer__nav__ul">
+          <li class="footer__item">
+            <a class="footer__link" href="#teamcontainer">Equipo</a>
           </li>
-          <li>
-            <a class="" href="./more-info.html">Más info del starter kit</a>
-
+          <li class="footer__item">
+            <a class="footer__link" href="#about-us">Quiénes Somos</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="./contact.html">Contacto</a>
           </li>
         </ul>
-      </main>
+      </nav>
 
-      <footer class="page__footer">
-        <small>
-          &copy; Todos los derechos reservados
-          <a class="link__adalab" href="https://adalab.es">Adalab</a>
+      <div class="footer__img">
+        <img class="logo" src="./assets/images/logo-adalab.png" alt="LOGO" />
+      </div>
+    </footer>
 
-        </small>
-      </footer>
+  </main>
+</body>
 
-    </div>
-    <script src="./assets/js/main.js"></script>
-  </body>
 </html>
