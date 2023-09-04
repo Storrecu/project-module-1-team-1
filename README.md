@@ -1,6 +1,3 @@
-![Banner equipo Rebirth Web](/images/Captura de pantalla 2023-09-04 a las 16.26.12.png)
-
-
 # Landing page 
 
 Este README proporciona una descripción general de la Landing Page que hemos desarrollado. 
