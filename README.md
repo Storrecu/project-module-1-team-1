@@ -1,4 +1,4 @@
-![Banner equipo Rebirth Web](src/images/Captura de pantalla 2023-09-04 a las 16.26.12.png)
+![Banner equipo Rebirth Web](/images/Captura de pantalla 2023-09-04 a las 16.26.12.png)
 
 
 # Landing page 
