@@ -1,3 +1,9 @@
+.container__navegation {
+  @media all and (min-width: 768px) {
+    width: 100vw;
+  }
+}
+
 .header {
   text-transform: uppercase;
   position: fixed;
@@ -8,19 +14,29 @@
   font-family: $font-family-header;
   opacity: 90%;
   color: $white;
-    &__name {
-      background-color: $blue-green;
-      height: 60px;
-      padding: 15px;
-      font-size: 16px;
-      display: flex;
-      align-items: center;
-      justify-content: center; 
-      :hover{
-        transform: scale(0.9);
+  &__name {
+    background-color: $blue-green;
+    height: 60px;
+    padding: 15px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    :hover {
+      transform: scale(0.9);
     }
-  } 
+  }
+  @media all and (min-width: 768px) {
+    display: flex;
+    &__name {
+      width: 65%;
+      padding-left: 45px;
+      align-items: center;
+      justify-content: start;
+    }
+  }
 }
+
 .navegation {
   background-color: $aqua;
   font-size: 15px;
@@ -28,24 +44,14 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
-  :hover{
+  :hover {
     transform: scale(0.9);
   }
-  &__list{
+  &__list {
     color: $white;
-  }  
-}
-@media all and (min-width: 768px) {
-  .header{
-    display: flex;
-    &__name {
-    width: 65%;
-    padding-left: 45px;
-    align-items: center;
-    justify-content: start;
   }
-}
-  .navegation {
+
+  @media all and (min-width: 768px) {
     height: 60px;
     width: 120%;
     padding-right: 100px;
@@ -53,10 +59,7 @@
     background-color: $blue-green;
     gap: 10px;
   }
-}
-@media all and (min-width: 1200px){
-  .navegation {
+  @media all and (min-width: 1200px) {
     padding-right: 138px;
-    padding-left: 45px;
-}
+  }
 }

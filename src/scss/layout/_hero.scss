@@ -1,47 +1,47 @@
 .hero {
   background-image: url(../images/imagen.jpg);
   height: 500px;
- background-size: cover;
+  background-size: cover;
   background-repeat: no-repeat;
-  background-position:inherit;
+  background-position: inherit;
   &__lema {
-  background-color: $white;
-  color: $black;
-  font-family: $font-family-header;
-  font-weight: 500;
-  font-size: 18px;
-  padding: 15px 10px;
-  text-align: center;
-  margin-left: 20px;
-  margin-right: 20px;
-  z-index: 3;
-  transform: translateY(470px);
-  @media all and (min-width:768px){
-    display: flex;
-    margin-right: 400px;
-    opacity: 0.8;
-    margin-left: 45px;
-    padding-left: 30px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    transform: translateY(445px)
-  }
-  @media all and (min-width:1200px){
-    margin-right: 488px;
-    margin-left: 138px;
+    background-color: $white;
+    color: $black;
+    font-family: $font-family-header;
+    font-weight: 500;
+    font-size: 18px;
+    padding: 15px 10px;
+    text-align: center;
+    margin-left: 20px;
+    margin-right: 20px;
+    z-index: 3;
+    transform: translateY(470px);
+    @media all and (min-width: 768px) {
+      display: flex;
+      margin-right: 400px;
+      opacity: 0.8;
+      margin-left: 45px;
+      padding-left: 30px;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      transform: translateY(445px);
+    }
+    @media all and (min-width: 1200px) {
+      margin-right: 488px;
+      margin-left: 138px;
+    }
   }
 }
-}
-.teamcontainer{
+.teamcontainer {
   &__title {
-  font-family: $font-family-header;
-  font-weight: 500;
-  color: $blue-green;
-  font-size: 24px;
-  text-align: center;
-  text-transform: uppercase;
-  padding-top: 80px;
-  padding-bottom: 30px;
+    font-family: $font-family-header;
+    font-weight: 500;
+    color: $blue-green;
+    font-size: 24px;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 80px;
+    padding-bottom: 30px;
   }
   &__text {
     text-align: center;
@@ -51,23 +51,33 @@
     margin-left: 15px;
     margin-right: 15px;
     padding-bottom: 20px;
-    @media all and (min-width:768px){
+    @media all and (min-width: 768px) {
       padding-left: 40px;
       padding-right: 40px;
     }
-    @media all and (min-width:1200px){
+    @media all and (min-width: 1200px) {
       padding-left: 300px;
       padding-right: 300px;
     }
   }
 }
-.container {
+
+.super-container {
   background-color: rgba(74, 72, 72, 0.057);
+}
+.container {
+  // background-color: rgba(74, 72, 72, 0.057);
   text-align: center;
   padding: 20px 15px;
   position: relative;
   display: flex;
   justify-content: center;
+  @media all and (min-width: 768px) {
+    margin: 0 20px;
+  }
+  @media all and(min-width: 1200px) {
+    margin: 0 60px;
+  }
 
   &__square {
     width: 20px;
@@ -80,25 +90,25 @@
     background-color: $white;
   }
 
-  &__div0{
-    &__div1{
-    @media (min-width:768px) {
-    width: 50%;
+  &__div0 {
+    &__div1 {
+      @media (min-width: 768px) {
+        width: 50%;
+      }
     }
-  }
-  @media (min-width:768px) {
-  display: flex;
-  gap: 50px;
-  }
+    @media (min-width: 768px) {
+      display: flex;
+      gap: 15px;
+    }
   }
 }
 
-.div2{
-@media (min-width:768px){
-  width: 50%;
+.div2 {
+  @media (min-width: 768px) {
+    width: 50%;
+  }
 }
-}
- .container__name {
+.container__name {
   font-family: $font-family-header;
   color: $blue-green;
   font-weight: 500;
@@ -113,4 +123,5 @@
   font-size: 16px;
   line-height: normal;
   text-align: center;
+  padding: 20px 5px 60px 45px;
 }
