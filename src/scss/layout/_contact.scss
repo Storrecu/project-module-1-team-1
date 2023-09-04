@@ -63,7 +63,10 @@
   }
 
 .image{
-  background-color: salmon;
+
+  background-image: url("../images/test10.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
   height: 300px;
 }
 
@@ -100,75 +103,93 @@
       font-size: 14px;
       font-family: $font-family-cards;
       color: $gunmetal;
-      margin-top: 30px;
-      margin-bottom: 30px;
+      margin-top: 10px;
+      margin-bottom: 20px;
       
     }
 
     &__email {
-  padding: 15px;
-  font-size: 14px;
-  font-family: $font-family-cards;
-  color: $gunmetal;
-  margin-top: 30px;
-      margin-bottom: 30px;
-
-    }
+      padding: 15px;
+      font-size: 14px;
+      font-family: $font-family-cards;
+      color: $gunmetal;
+      margin-top: 10px;
+      margin-bottom: 20px;
+      }
 
     &__telephone {
       padding: 15px;
       font-size: 14px;
       font-family: $font-family-cards;
       color: $gunmetal;
-      margin-top: 30px;
-      margin-bottom: 30px;
+      margin-top: 10px;
+      margin-bottom: 10px;
     }
 
-    &__area {
-      
+    &__message {
+      display: flex;
+      flex-direction: column;
       font-size: 14px;
       font-family: $font-family-cards;
       color: $gunmetal;
-      background-color: lightgray;
       margin-top: 30px;
-      margin-bottom: 30px;
+      margin-bottom: 10px;
+      position: relative;
     }
-
-
-
-
-      :focus{
-        background-color: $aqua;
-    &--email::placeholder{
-        color: black;
+    &__area::placeholder{
+      font-family: $font-family-cards;
+      font-size: 14px;
+      padding: 10px;
+      color:$cool-grey;
     }
-    }
-
-
 }
-
-.asterisk {
-  color: $aqua;
+.name{
+      font-size: 14px;
+      font-family: $font-family-cards;
+      color: $gunmetal;
 }
-
-
-
+.telephone{
+  font-size: 14px;
+      font-family: $font-family-cards;
+      color: $gunmetal;
+}
+.email{
+    font-size: 14px;
+      font-family: $font-family-cards;
+      color: $gunmetal;
+}
 .button{
-
+  display: flex;
+  flex-direction: column;
   background-color: $blue-green;
   color: $white;
   font-family: $font-family-cards;
   text-transform: uppercase;
   padding: 10px;
-  border-radius: 4px;}
+  border-radius: 4px;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.asterisk {
+  color: $aqua;
+  
+}
+.asterisk1{
+  color: $aqua;
+  position: absolute;margin-left:60px;
+  margin-bottom: 20px;
+}
 
 
-  .footer {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    height: 250px;
-  }
+
+
+.footer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 250px;
+}
   
   .footer__name {
     font-family: $font-family-cards;

@@ -44,18 +44,20 @@
       </p>
       <div>
         <form class="form">
-          <label for="firstname">Nombre completo <span class="asterisk">&#42;</span></label>
+          <label  class="name" for="firstname">Nombre completo <span class="asterisk">&#42;</span></label>
           <input class="form__name" for="firstname" type="text" placeholder="Nombre..." id="firstname" name="firstname" required />
 
-          <label for="email">Email <span class="asterisk">&#42;</span></label>
+          <label class="email"for="email">Email <span class="asterisk">&#42;</span></label>
           <input class="form__email" for="email" type="email" placeholder="nombre.apellidos@mail.com" id="email"
             name="firstname" required />
 
-          <label for="telephone">Teléfono</label>
+          <label class="telephone" for="telephone">Teléfono</label>
           <input class="form__telephone" for="telephone" type="text-number" placeholder="Ej:123456789" id="telephone" name="telephone" />
-          <label for="messages" class="form__name">Mensaje <span class="asterisk">&#42;</span><label>
-              <textarea class="form__area" rows="5" cols="40" id="messages" name="messages" required>¿Qué necesitas?</textarea>
-              <a class="button" href="#">Enviar</a>
+
+          <label for="messages" class="form__message">Mensaje <span class="asterisk1">&#42;</span></label>
+          <textarea class="form__area" rows="10" cols="45" id="messages" name="messages" placeholder="¿Qué necesitas?" required></textarea>
+
+          <a class="button" href="#">Enviar</a>
         </form>
       </div>
     </section>
